@@ -178,7 +178,7 @@ module user_module_019235602376235615(
     wire x_yb;
     assign x_yb = clk;
     assign io_out[6] = x_yb;
-    wire data_out;
+    wire [5:0] data_out;
     assign io_out[5:0] = data_out;
 
     assign data_out = (done) ? (clk) ? reg_x : reg_y : 0;
