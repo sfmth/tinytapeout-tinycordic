@@ -1,10 +1,10 @@
 # HACK: We need a unique ID for the verilog files so they can exist harmoniously with the rest of the
 # designs that are submitted. So, even if we're not using Wokwi, copy the template project and enter
 # the ID below as the WOKWI_PROJECT_ID so we get a guaranteed unique ID:
-WOKWI_PROJECT_ID=339898704941023827
+WOKWI_PROJECT_ID=019235602376235615
 
 fetch:
-# HACK: we don't need to fetch this as we have our own verilog source, manually created: src/user_module_339898704941023827.v
+# HACK: we don't need to fetch this as we have our own verilog source, manually created: src/user_module_019235602376235615.v
 #	curl https://wokwi.com/api/projects/$(WOKWI_PROJECT_ID)/verilog > src/user_module_$(WOKWI_PROJECT_ID).v
 	sed -e 's/USER_MODULE_ID/$(WOKWI_PROJECT_ID)/g' template/scan_wrapper.v > src/scan_wrapper_$(WOKWI_PROJECT_ID).v
 # HACK: instead of globbing the entire src directory, specify modules explicitly in custom config.tcl
