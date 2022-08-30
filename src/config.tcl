@@ -20,10 +20,10 @@ $::env(DESIGN_DIR)/scan_wrapper_019235602376235615.v"
 
 # absolute die size
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 150 150"
+set ::env(DIE_AREA) "0 0 100 100"
 set ::env(FP_CORE_UTIL) 45
 set ::env(PL_BASIC_PLACEMENT) {1}
-set ::env(PL_TARGET_DENSITY) 0.65
+# set ::env(PL_TARGET_DENSITY) 0.65
 
 # use alternative efabless decap cells to solve LI density issue
 set ::env(DECAP_CELL) "\
